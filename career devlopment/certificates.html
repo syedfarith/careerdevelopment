@@ -29,12 +29,14 @@ body, h1, h2, h3, p, ul, li {
 
 /* Header animation */
 header {
-    position: relative;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    overflow: hidden;
+  width: 100%;
+  height: 40px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
 }
 
 header .header-content {
@@ -50,14 +52,14 @@ header.animated .header-content {
 
 /* Geometric pattern background */
 header {
-  background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
+    background: linear-gradient(135deg, #ffffff 10%, #dfcce9 20%);
 }
 
 /* Unique design elements */
 .header-title {
     font-size: 3.5em;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 0.5em;
 }
 
@@ -84,49 +86,41 @@ header {
     transform: translateY(-5px);
 }
 
-/* img{
-    width: 100px; /* Adjust the image width as needed */
-  /* height: auto; /* Maintain the aspect ratio */
-  /* margin-right: 20px;  */
-/* } */ */ */
+img{
+    display: flex;
+    align-items: flex-end;
+}
 nav ul {
     list-style: none;
 }
 
 nav li {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font: 16px "inter", sans-serif;
     display: inline;
-    margin-right: 20px;
-    font-size: 20px;
-}
-nav li:hover {
-    color:orangered;
-}
-nav a {
-    text-decoration: none;
-    color: #fff;
+    margin-right: 10px;
+  padding: 10px 20px ;
+ 
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  
+  transition: all 0.5s ease-out;
 }
 
-.hero {
-    background-image: url(skasc.jpg);
-    background-size: cover;
-    color: #fff;
-    padding: 10em 0;
-    text-align: center;
+nav a {
+    text-decoration: none;
+    color: #000000;
 }
-/* button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  border: none;
-  letter-spacing: 0.05em;
-  border-radius: 16px;
-} */
+
+
 
 button svg {
   margin-right: 3px;
@@ -152,6 +146,30 @@ button:hover span {
     text-decoration: none;
     border-radius: 5px;
 }
+.content {
+            min-height: calc(100vh - 50px); /* Subtract footer height */
+            padding-bottom: 50px; /* Footer height */
+            background-image: url("car.jpg");
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fae4f6;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
 .about, .research,.purpose, .mission, .offer {
     background-color: #f5f5f5;
@@ -163,17 +181,12 @@ button:hover span {
 
 /* Footer styling */
 footer {
-  background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
+    background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
-/* img 
-{
-    border-radius: 50%;
-    text-align: right
-} */
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
     nav ul {
         text-align: center;
@@ -199,8 +212,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: first baseline; 
-  background-color: #f0eded;
-  color: white;
+  background-color: #979797;
+ 
+  color: rgb(0, 0, 0);
   padding: 20px;
 }
 
@@ -209,18 +223,25 @@ body {
   flex: 3;
   padding: 60px;
   color: #000000;
-  background-image: url("ce.avif");
+  background-image: url("bodybg.png");
 }
 
 .split-button {
-  padding: 10px 20px;
-  margin: 5px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  background-color: #FFC700;
-  border: none;
-  color: #333;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f5beff;
+  color: #0e0111;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 5px solid;
+  padding: 0.25em 1.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 
@@ -232,7 +253,7 @@ body {
     </style>
 </head>
 <body>
-    <img src="sklog.png" alt="logo" width="1470" height="150">
+   
     <header>
     </div>
         <nav>
@@ -246,13 +267,13 @@ body {
     </header>
     <div class="split-container">
         <div class="left-side">
-          <a href="acc.html"><button class="split-button">Account</button></a>
-          <a href="certificates.html"><button class="split-button">Certificates</button></a>
-          <a href="careervis.html"><button class="split-button">Career</button></a>
+          <a href="acc.html"><button class="split-button">USER-123456</button></a>
+          <a href="certificates.html"><button class="split-button">Certificate</button></a>
+          <a href="careervis.html"><button class="split-button">MY Careers</button></a>
         </div>
         <div class="right-side">
-          <h1 style="text-align: center;">Certificates page</h1>
-          <p style="text-align: center;">You can upoad your certificates to get the accurate career-path recommendation</p>
+          <h1 style="text-align: center;">Certificates page</h1><br>
+          <p style="text-align: center;">You can upoad your certificates to get the accurate career-path recommendation</p><br>
 
           <form enctype="multipart/form-data">
             <label for="pdfUpload" class="file-label">

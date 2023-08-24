@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +19,36 @@ ul {
 }
 
 /* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+body,html{
+    background-image: url(bodybg.png);
+    background-size: 7000% 7000%;
+    height: 100%;
+  background-color: #9387ab;
+  font: 18px "inter", sans-serif;
+  text-align: center;
 }
 
 /* Reset default margin and padding */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+   
+  
+
+
 
 /* Header animation */
 header {
-    position: relative;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    overflow: hidden;
+    width: 100%;
+  height: 40px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
 }
 
 header .header-content {
@@ -50,14 +64,14 @@ header.animated .header-content {
 
 /* Geometric pattern background */
 header {
-    background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
+    background: linear-gradient(135deg, #ffffff 57%, #e4b3ff 20%);
 }
 
 /* Unique design elements */
 .header-title {
     font-size: 3.5em;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 0.5em;
 }
 
@@ -84,26 +98,44 @@ header {
     transform: translateY(-5px);
 }
 
-/* img{
-    width: 100px; /* Adjust the image width as needed */
-  /* height: auto; /* Maintain the aspect ratio */
-  /* margin-right: 20px;  */
-/* } */ */ */
+
 nav ul {
     list-style: none;
 }
 
 nav li {
+    -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: black;
+    font: 16px "inter", sans-serif;
     display: inline;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 10px;
+  padding: 10px 20px ;
+  width: 13%;
+  height: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  
+  transition: all 0.5s ease-out;
 }
 nav li:hover {
-    color:orangered;
+    color:rgb(169, 99, 74);
 }
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #060606;
+}
+.hea{
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: black;
+   
+    font-size: 40px;
+    font-weight: bold;
+    color: #73bfe6;
 }
 
 .hero {
@@ -116,12 +148,12 @@ nav a {
 button {
   display: flex;
   align-items: center;
-  font-family: inherit;
+  font-family: 'inter';
   font-weight: 500;
   font-size: 17px;
   padding: 0.8em 1.3em 0.8em 0.9em;
   color: white;
-  background: #ad5389;
+  background: #e47373;
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   border: none;
   letter-spacing: 0.05em;
@@ -145,6 +177,7 @@ button:hover svg {
 button:hover span {
   transform: translateX(7px);
 }
+
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -154,26 +187,22 @@ button:hover span {
 }
 
 .about, .research,.purpose, .mission, .offer {
-    background-color: #f5f5f5;
+   
     padding: 3em 0;
     text-align: center;
+    background-image: url("bodybg.png");
     
 }
 
 
-/* Footer styling */
+
 footer {
     background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
-/* img 
-{
-    border-radius: 50%;
-    text-align: right
-} */
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
     nav ul {
         text-align: center;
@@ -181,28 +210,28 @@ footer {
 
     nav li {
         display: block;
-        margin: 10px 0;
+        margin: 100px 0;
     }
 }
 
 
-    </style>
+</style>
 </head>
-<body>
-    <img src="sklog.png" alt="logo" width="1470" height="150">
+<body >
+    <img src="sklog.png" alt="logo" width="1470" height="170">
     <header>
     </div>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="career-path.html">Career path</a></li>
-                <li><a href="acc.html">MyAccount</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="career-path.html">CAREER PATH</a></li>
+                <li><a href="acc.html">MYACCOUNT</a></li>
                 
             </ul>
         </nav>
     </header>
     <section class="hero">
-        <h2>Empowering Students for Successful Careers</h2>
+        <h2 class="hea">Empowering Students for Successful Careers</h2>
         <p>Explore our research, strategies, and resources to enhance career development programs.</p>
         <a href="select.html" class="cta-button"><button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
@@ -210,13 +239,13 @@ footer {
           </button></a>
     </section>
     <section class="mission">
-        <h2>Our Mission: Preparing You for Success</h2>
+        <h2 style="font-weight: bold;">Our Mission: Preparing You for Success</h2>
         <p>At skasc career development page , we understand the challenges that students face when transitioning from academia to the professional world. Our primary focus is to evaluate the 
             existing career development programs and identify areas of improvement. 
             We aim to increase job placement rates by offering comprehensive strategies that bridge the gap between education and employment.</p>
     </section>
     <section class="offer">
-        <h2>What We Offer:</h2>
+        <h2 style="font-weight: bold;">What We Offer:</h2>
 
             <p><b>Effective Career Development Programs Evaluation:</b> We conduct in-depth assessments of current career development programs to determine their strengths and areas that need improvement. By analyzing the latest industry trends and employer expectations, we tailor programs to meet the evolving needs of the job market.<br>
             

@@ -29,12 +29,14 @@ body, h1, h2, h3, p, ul, li {
 
 /* Header animation */
 header {
-    position: relative;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    overflow: hidden;
+  width: 100%;
+  height: 40px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
 }
 
 header .header-content {
@@ -50,7 +52,7 @@ header.animated .header-content {
 
 /* Geometric pattern background */
 header {
-  background: linear-gradient(135deg, #dca9ec 0%, #9c0fe3 100%);
+  background: linear-gradient(135deg, #ffffff 10%, #dfcce9 20%);
 }
 
 /* Unique design elements */
@@ -94,16 +96,31 @@ nav ul {
 }
 
 nav li {
+  display: inline-block;
+        width: 160px;
+        height: 10px;
+    -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: black;
+    font: 16px "inter", sans-serif;
     display: inline;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 10px;
+  padding: 10px 20px ;
+ 
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  
+  transition: all 0.5s ease-out;
 }
 nav li:hover {
     color:orangered;
 }
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #0c0c0c;
 }
 
 .hero {
@@ -113,20 +130,7 @@ nav a {
     padding: 10em 0;
     text-align: center;
 }
-/* button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  border: none;
-  letter-spacing: 0.05em;
-  border-radius: 16px;
-} */
+
 
 button svg {
   margin-right: 3px;
@@ -168,12 +172,7 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
-/* img 
-{
-    border-radius: 50%;
-    text-align: right
-} */
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
     nav ul {
         text-align: center;
@@ -200,8 +199,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: first baseline; 
-  background-color: #f0eded;
-  color: white;
+  background-color: #979797;
+ 
+  color: rgb(0, 0, 0);
   padding: 20px;
 }
 
@@ -210,18 +210,25 @@ body {
   flex: 3;
   padding: 60px;
   background-color: #f9f9f9;
-  background-image: url("back.png");
+  background-image: url("bodybg.png");
 }
 
 .split-button {
-  padding: 10px 20px;
-  margin: 5px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  background-color: #FFC700;
-  border: none;
-  color: #333;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f5beff;
+  color: #0e0111;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border: 5px solid;
+  padding: 0.25em 1.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 
@@ -341,7 +348,7 @@ body {
     </style>
 </head>
 <body>
-    <img src="sklog.png" alt="logo" width="1470" height="150">
+    
     <header>
     </div>
         <nav>
@@ -355,9 +362,9 @@ body {
     </header>
     <div class="split-container">
         <div class="left-side">
-          <a href="acc.html"><button class="split-button">Account</button></a>
-          <a href="certificates.html"><button class="split-button">Certificates</button></a>
-          <a href="careervis.html"><button class="split-button">Career</button></a>
+          <a href="acc.html"><button class="split-button">USER-123456</button></a>
+          <a href="certificates.html"><button class="split-button">Certificate</button></a>
+          <a href="careervis.html"><button class="split-button">MY Careers</button></a>
         </div>
         <div class="right-side">
             <div class="center">

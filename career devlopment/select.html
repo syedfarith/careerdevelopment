@@ -20,8 +20,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-image: url("car.jpg");
-    background-size: 1475px 650px;
+    background-image: url("expbg.jpg");
+   
+    background-size:100%;
     background-repeat: no-repeat;
     /* background-position: center */
     /* background: linear-gradient(135deg, #8900f9 0%, #ff0077 100%); */
@@ -36,12 +37,14 @@ body, h1, h2, h3, p, ul, li {
 
 /* Header animation */
 header {
-    position: relative;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    overflow: hidden;
+    width: 100%;
+  height: 40px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
 }
 
 header .header-content {
@@ -57,7 +60,7 @@ header.animated .header-content {
 
 /* Geometric pattern background */
 header {
-    background: linear-gradient(135deg, #eca9de 0%, #9c0fe3 100%);
+    background: linear-gradient(135deg, #ffffff 10%, #dfcce9 20%);
 }
 
 /* Unique design elements */
@@ -100,14 +103,30 @@ nav ul {
 }
 
 nav li {
+    display: inline-block;
+        width: 160px;
+        height: 10px;
+    -webkit-text-stroke-width: 0.5px;
+     -webkit-text-stroke-color: black;
+    font: 16px "inter", sans-serif;
     display: inline;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 10px;
+  padding: 10px 20px ;
+ 
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  
+  transition: all 0.5s ease-out;
 }
+
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #101010;
 }
 
 .hero {
@@ -162,6 +181,7 @@ button:hover span {
     padding: 3em 0;
     text-align: center;
     
+    
 }
 
 
@@ -184,7 +204,7 @@ footer {
     </style>
 </head>
 <body>
-    <img src="sklog.png" alt="logo" width="1470" height="150">
+  
     <header>
         <nav>
             <ul>
@@ -196,17 +216,23 @@ footer {
     </header>
     <section>
         <div style="text-align: center;">
-            <h1>Explore Your Career Path</h1>
-            <p>Answer a few questions to discover your potential career options.</p>
+            <br><br>
+            <h1 style="text-align: center;color: #101010;font-family: inter;">EXPLORE YOUR CAREER PATH</h1>
+            
+            <p style="color: #17141d;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Answer a few questions to discover your potential career options.</p>
         </div>
         <div class="container" style="text-align: justify;">
-            <h2>Let's Get Started</h2>
-            <h3>Please tell us if you have already chosen a career path or need some suggestions:</h3>
-            <label for="careerChoice">Have you already chosen a career path:</label>
+            <br>
+            <h2 style="color: red;">Let's Get Started</h2>
+            <br>
+            <h3 style="color: #333;">Please tell us if you have already chosen a career path or need some suggestions:</h3>
+            <br>
+            <label for="careerChoice" style="color: #333;">Have you already chosen a career path:</label>
+            <br>
             <select id="careerChoice">
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-            </select><br>
+            </select><br><br>
 
 
             <button id="continueBtn" class="btn-primary">Continue</button>
